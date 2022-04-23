@@ -4,6 +4,10 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  width: 100vw;
+  height: 100vh;
+  
+  overflow-x: hidden;
 }
 
 * {
@@ -13,3 +17,7 @@ body {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.main-bg {
+  background: linear-gradient(63.52deg, #61F4DE 3.85%, #63DFE4 28.69%, #68B6EF 50.71%, #6C8DFA 72.74%, #6E78FF 93.83%);
+}
