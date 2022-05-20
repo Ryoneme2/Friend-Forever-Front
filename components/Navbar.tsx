@@ -1,19 +1,20 @@
 import React from 'react'
+import ImageWithLazy from '../components/ImageWithLazy'
 
 type Props = {}
 
 const Navbar = (props: Props) => {
   return (
-    <nav className='w-[100%] flex justify-between items-center p-2'>
+    <nav className='w-[100%] flex justify-between items-center py-4 px-10'>
       <div>
-        <h1>logo</h1>
+      <ImageWithLazy w={75} h={75} source={`/images/FriendLightSvg.svg`}/>
       </div>
       <div className='flex justify-end items-center'>
         <div>
-          <h1>sign in</h1>
+          <h1 className='text-white font-semibold underline cursor-pointer'>Sign in</h1>
         </div>
         <div>
-        <h1>sign up</h1>
+        <h1 className='text-[#00575B] font-semibold cursor-pointer bg-white py-2 px-6 rounded-full ml-8'>Sign up</h1>
         </div>
       </div>
     </nav>
